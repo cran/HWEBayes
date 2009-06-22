@@ -3,7 +3,6 @@
 \alias{HWEImportSamp}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Importance sampling to calculate the normalizing constant under the single f model
-%%  ~~function to do ... ~~
 }
 \description{Importance sampling to calculate the normalizing constant under the single \eqn{f} model. Two proposals are available, either sampling from the prior or sampling from a normal distribution whose mean vector and variance-covariance matrix must be specified. The latter may be taken from an MCMC analysis using, for example, WinBUGS. In all cases the likelihood is multinomial and the prior is Dirichlet on the allele frequencies, and normal on \eqn{\lambda} where \eqn{\lambda=\log(f-f_{\min})/(1-f))}. See Weir (1996) for a description of HWE and different models/parameterizations.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -40,9 +39,6 @@ ncol = length(alpha)))
 %%     ~~Describe \code{gsigma} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -58,9 +54,6 @@ Weir, B.S. (1996). Genetic Data Analysis II. Sunderland MA: Sinauer.
 }
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

@@ -3,7 +3,6 @@
 \alias{LambdaPriorChoice}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Called by LambaOptim
-%%  ~~function to do ... ~~
 }
 \description{Internal function, should not be needed. It is the function that is minmized when the mean and standard deviation for \eqn{\lambda} are being found.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -38,9 +37,6 @@ LambdaPriorChoice(x, nsim, bvec, f1, f2, p1, p2, init)
 %%     ~~Describe \code{init} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{Returns the sum of squares that is being minimized.
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -54,17 +50,11 @@ LambdaPriorChoice(x, nsim, bvec, f1, f2, p1, p2, init)
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{\code{LambdaOptim}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
-\examples{
-
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

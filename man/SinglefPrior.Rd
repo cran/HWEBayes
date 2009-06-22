@@ -3,7 +3,6 @@
 \alias{SinglefPrior}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Samples from the single f prior.
-%%  ~~function to do ... ~~
 }
 \description{Function to sample from the single \eqn{f} prior, that is the Dirichlet and normal on \eqn{\lambda}, where \eqn{\lambda=\log((f-f_{\min})/(1-f))}. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -26,9 +25,6 @@ SinglefPrior(nsim, alpha, lambdamu, lambdasd)
 %%     ~~Describe \code{lambdasd} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -43,9 +39,6 @@ SinglefPrior(nsim, alpha, lambdamu, lambdasd)
 }
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

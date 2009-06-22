@@ -3,7 +3,6 @@
 \alias{SinglefReject}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Samples from the posterior for the single f model
-%%  ~~function to do ... ~~
 }
 \description{Function to generate samples from the posterior for allele frequencies and \eqn{f}, under the single \eqn{f} model.
 Samples are generated using a rejection algorithm that simulates from the prior.
@@ -30,9 +29,6 @@ SinglefReject(nsim, bvec, lambdamu, lambdasd, nvec)
 %%     ~~Describe \code{nvec} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -50,15 +46,9 @@ SinglefReject(nsim, bvec, lambdamu, lambdasd, nvec)
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 data(DiabRecess)
 postsampf1 <- SinglefReject(nsim=100,bvec=rep(1,4),lambdamu=-2.95,

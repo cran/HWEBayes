@@ -22,9 +22,6 @@ baselogit(probs)
 }
 \author{Jon Wakefield (jonno@u.washington).
 }
-\note{
-
-}
 \seealso{\code{invbaselogit}
 }
 \examples{

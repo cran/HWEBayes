@@ -14,15 +14,11 @@ DirichNormSat(nvec, bvec)
   \item{bvec}{vector of length \eqn{k(k+1)/2} Dirichlet prior parameters, where \eqn{k} is the number of alleles.
 }
 }
-\details{
-}
 \value{The normalizing constant.
 }
 \references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
 }
 \author{Jon Wakefield (jonno@u.washington.edu)}
-\note{
-}
 
 \seealso{\code{DirichSampSat}, \code{DirichSampHWE}, \code{DirichNormSat}, \code{DirichNormHWE}, \code{HWEDirichBF2}
 }

@@ -3,7 +3,6 @@
 \alias{HWEDirichBF2}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Evaluates the Bayes factor in the k=2 allele case under conjugate priors
-%%  ~~function to do ... ~~
 }
 \description{Function to evaluate the Bayes factor \eqn{\Pr(n|\mbox{ HWE })/\Pr(n|\mbox{ saturated model })} in the \eqn{k=2} allele case and with conjugate (Dirichlet) priors under HWE and saturated models.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -23,9 +22,6 @@ HWEDirichBF2(nvec, bvec0, bvec1)
 %%     ~~Describe \code{bvec1} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{Bayes factor is returned.
 }
 \references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
@@ -33,9 +29,6 @@ HWEDirichBF2(nvec, bvec0, bvec1)
 }
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

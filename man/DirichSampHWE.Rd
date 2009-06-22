@@ -26,9 +26,6 @@
 }
 \author{Jon Wakefield (jonno@u.washington).
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

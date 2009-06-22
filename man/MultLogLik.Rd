@@ -13,7 +13,6 @@ alleles), and a transformed version of \eqn{f}. Hence a vector of length
 \item{nvec}{vector of genotype frequencies in the order \eqn{n_{11}, n_{21}, n_{22}, ..., n_{k1}, n_{k2}, ..., n_{kk}}.}
 \item{paramch}{a variable that if =1 assumes \eqn{f} is on the range (-1,+1) before transformation, and if =2 assumes on the range \eqn{(f_{\min},+1}).}
 }
-\details{}
 \value{
 \item{MultLoglik}{The value of the  (unnormalized) multinomial log-likelihood.}
 }
@@ -25,12 +24,8 @@ Weir, B.S. (1996). Genetic Data Analysis II. Sunderland MA: Sinauer.
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{\code{SinglefReject}}
-\examples{}
 \keyword{ distribution }

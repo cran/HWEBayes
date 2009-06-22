@@ -3,8 +3,6 @@
 \alias{HWEsimdat}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Simulate data under the single f model with k alleles.
-
-%%  ~~function to do ... ~~
 }
 \description{Simulate data under the single \eqn{f} model with \eqn{k} alleles (so \eqn{f=0} gives data under HWE).
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -24,9 +22,6 @@ HWEsimdat(npop, q, f)
 %%     ~~Describe \code{f} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -42,15 +37,9 @@ Weir, B.S. (1996). Genetic Data Analysis II. Sunderland MA: Sinauer.
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
 }
-\note{
-%%  ~~further notes~~
-}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 counts <- HWEsimdat(100,q=c(0.1,0.8,.1),f=0.1)
 }

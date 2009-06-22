@@ -3,7 +3,6 @@
 \alias{DirichNormHWE}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Evaluates the normalizing constant under the HWE model, with a conjugate prior
-%%  ~~function to do ... ~~
 }
 \description{Function to evaluate the normalizing constant given a conjugate Dirichlet prior and the HWE model.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -19,15 +18,11 @@ DirichNormHWE(nvec, bvec0)
   \item{bvec0}{vector of length \eqn{k} Dirichlet prior parameters, where \eqn{k} is the number of alleles.
 }
 }
-\details{
-}
 \value{The normalizing constant.
 }
 \references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. 
 }
 \author{Jon Wakefield (jonno@u.washington).
-}
-\note{
 }
 
 \seealso{\code{DirichNormSat}

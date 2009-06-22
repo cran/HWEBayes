@@ -3,7 +3,6 @@
 \alias{DirichSampSat}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Simulate samples from a Dirichlet prior or posterior under the saturated model
-%%  ~~function to do ... ~~
 }
 \description{Function to simulate samples from the satuated Dirichlet model. Can be used for samples from the prior or the (conjugate) Dirichlet posterior, both in the \eqn{k} allele case. Samples are generated for the genotype frequencies in the order \eqn{p_{11}, p_{12},..., p_{1k},p_{22} ..., p_{2k},..., p_{kk}}, the allele frequencies, and the fixation indices.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -38,9 +37,6 @@ i.e. \code{fixind[,i,j]} for \code{[i>j]}.}
 }
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

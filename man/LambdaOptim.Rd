@@ -3,7 +3,6 @@
 \alias{LambdaOptim}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Obtains values for the prior specification for lambda
-%%  ~~function to do ... ~~
 }
 \description{In the single \eqn{f} model we may parameterize in terms of the allele frequencies and \eqn{\lambda=\log((f-f_{\min})/(1-f))}  where \eqn{f_{\min}=-p_{\min}/(1-p_{\min})} and \eqn{p_{\min}} is the minimum allele frequency. The prior for \eqn{\lambda} is assumed normal and this function finds the mean and standard deviation of this normal, given two values for \eqn{f}, with associated probabilities.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -35,9 +34,6 @@ LambdaOptim(nsim, bvec, f1, f2, p1, p2, init)
 %%     ~~Describe \code{init} here~~
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -50,9 +46,6 @@ LambdaOptim(nsim, bvec, f1, f2, p1, p2, init)
 }
 \author{Jon Wakefield (jonno@u.washington.edu)
 %%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with 
