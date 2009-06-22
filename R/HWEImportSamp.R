@@ -67,7 +67,8 @@ function(nsim,nvec,ischoice,lambdamu,lambdasd,alpha,
      }
      PrnH1 <- PrnH1/nsim
      varest <- (varterm1/nsim - PrnH1^2)/nsim
-     cat("nsim norm constant (se) 95% interval = ",nsim,PrnH1,"(",sqrt(varest),")",PrnH1-1.96*sqrt(varest),PrnH1+1.96*sqrt(varest),"\n")
+     cat("nsim norm constant (se) 95% interval:\n")
+     cat(nsim,PrnH1,"(",sqrt(varest),")",PrnH1-1.96*sqrt(varest),PrnH1+1.96*sqrt(varest),"\n")
      list(PrnH1=PrnH1,varest=varest)
 }
 

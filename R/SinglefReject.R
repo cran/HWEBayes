@@ -26,7 +26,8 @@ function(nsim,bvec,lambdamu,lambdasd,nvec){
    }
    PrnH1 <- PrnH1/count
    varest <- (varterm1/count - PrnH1^2)/count
-   cat("nsim norm constant (se) 95% interval = ",nsim,PrnH1,"(",sqrt(varest),")",PrnH1-1.96*sqrt(varest),PrnH1+1.96*sqrt(varest),"\n")	
+   cat("nsim norm constant (se) 95% interval: \n")
+   cat(nsim,PrnH1,"(",sqrt(varest),")",PrnH1-1.96*sqrt(varest),PrnH1+1.96*sqrt(varest),"\n")	
    accrate <- nsim/count
    list(psamp=psamp,fsamp=fsamp,accrate=accrate,PrnH1=PrnH1,varest=varest)
 }

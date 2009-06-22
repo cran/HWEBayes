@@ -34,7 +34,8 @@ function(nvec){
 #	cat("Maximum LogLik (single f model) = ",fmaxloglik,"\n")
 	pmin <- min(fqhat)
 	fmin <- -pmin/(1-pmin)
-	cat("Probs and f at max and fmin = ",fqhat,fsingle,fmin,"\n")
+	cat("Probs and f at max and fmin:\n ")
+	cat(fqhat,fsingle,fmin,"\n")
 	list(phat=phat,qhat=qhat,fmaxloglik=fmaxloglik,fqhat=fqhat,fsingle=fsingle,fmin=fmin,fixindhat=fixindhat)
 }
 
