@@ -16,7 +16,8 @@ DirichNormSat(nvec, bvec)
 }
 \value{The normalizing constant.
 }
-\references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
+\references{Wakefield, J. (2010). Bayesian methods for examining Hardy-Weinberg
+equilibrium. Biometrics; Vol 66:257-65
 }
 \author{Jon Wakefield (jonno@u.washington.edu)}
 

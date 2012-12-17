@@ -34,7 +34,8 @@ SinglefPrior(nsim, alpha, lambdamu, lambdasd)
 \item{lambda}{samples for \eqn{\lambda}}
 %% ...
 }
-\references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
+\references{Wakefield, J. (2010). Bayesian methods for examining Hardy-Weinberg
+equilibrium. Biometrics; Vol 66:257-65
 %% ~put references to the literature/web site here ~
 }
 \author{Jon Wakefield (jonno@u.washington.edu)

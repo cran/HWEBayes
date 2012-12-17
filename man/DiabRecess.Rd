@@ -17,7 +17,8 @@ Thomson, G. et al (1986). HLA and IDDM predisposition: new aspects. Genetic Epid
 \references{
 Thomson, G. (1983). Investigation of the mode of inheritance of the HLA associated diseases by the method of antigen genotype frequencies among diseased individuals. Tissue Antigens, 21, 81-104.
 
-Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
+Wakefield, J. (2010). Bayesian methods for examining Hardy-Weinberg
+equilibrium. Biometrics; Vol 66:257-65
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{

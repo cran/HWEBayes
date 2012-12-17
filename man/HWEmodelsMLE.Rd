@@ -28,7 +28,8 @@ HWEmodelsMLE(nvec)
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
+\references{Wakefield, J. (2010). Bayesian methods for examining Hardy-Weinberg
+equilibrium. Biometrics; Vol 66:257-65
 
 Weir, B.S. (1996). Genetic Data Analysis II. Sunderland MA: Sinauer.
 %% ~put references to the literature/web site here ~

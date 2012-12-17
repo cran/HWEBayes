@@ -1,0 +1,13 @@
+citHeader("To cite the HWEBayes package in publications use:")
+
+citEntry(entry="Article",
+  author =  as.person("Jon Wakefield"),
+  title =  "Bayesian methods for examining {H}ardy-{W}einberg equilibrium",
+  journal =  "Biometrics",
+  year =  2010,
+  volume = 66,
+  number = 1,
+  pages = "257-65",
+
+  textVersion = "Wakefield, J. (2010). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics; Vol 66:257-65"
+)

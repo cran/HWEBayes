@@ -5,12 +5,16 @@ function(nvec){
        count <- 1
        for(i in 1:k){
        	     for(j in 1:k){
-# n is lower triangular
-             	   if(i <= j){ n[i,j] <- nvec[count]; count<-count+1} 
+                 ## n is lower triangular
+                 if(i <= j){ n[i,j] <- nvec[count]; count<-count+1}
 	     }
        }
-       mu <- n; mt <- t(n) 
-#      m is the number of alleles matrix
+       mu <- n; mt <- t(n)
+
+###n2 <- matrix(0, nrow=k, ncol=k)
+###n2[lower.tri(n2, diag=TRUE)] <- nvec
+
+       ##      m is the number of alleles matrix
        m <- mt+mu; qhat <- fqhat <- NULL
        phat <- fixindhat <- matrix(0,nrow=k,ncol=k)
        for (i in 1:k) {

@@ -1,47 +1,54 @@
 MultLogLik <-
-function(x,nvec,paramch=1){
-	   k <- .5*(-1+sqrt(1+8*length(nvec)))
-	   pmarg <- rep(0,k)
-	   pmarg <- invbaselogit(x[1:k-1])$probs
-	   minp <- min(pmarg)
-	   minf <- -minp/(1-minp)
-	   if (paramch==1) f <- (exp(x[k])-1)/(exp(x[k])+1)
-	   if (paramch==2) {f <- (exp(x[k])+minf)/(exp(x[k])+1)}
-#	   cat(x,pmarg,f,minp,"\n")
-	   const <- 10^80
-	   qvec <- rep(0,k+1)
-	   if (is.na(minp)) MultLogLik <- -const
-	   if (is.na(f)) MultLogLik <- -const
-           if ( is.na(minp) == FALSE & is.na(f) == FALSE & f < -minp/(1-minp) ) {
-#	      cat("TROUBLE")
-	      MultLogLik <- -const
-           }
-	   if (is.na(minp) == FALSE & is.na(f) == FALSE & f >= -minp/(1-minp) ){
-	      MultLogLik <- 0
-	      count <- 1
-	      for (i in 1:k){
-	       for (j in i:k){
-	       	   if (j==i){
-		      qvec[count] <- pmarg[i]^2 + f*pmarg[i]*(1-pmarg[i])  
-#cat(i,j,count,qvec[count],"\n")
-		      count <- count+1
-		   }
-		   if (j>i){
-		      qvec[count] <- 2*pmarg[i]*pmarg[j]*(1-f)	     
-#cat(i,j,count,qvec[count],"\n")
-			 count <- count+1
-		   }
-	       }
-              }
-	      for( i in 1:length(nvec)){
-	      	   if (qvec[i]<=0) { #cat("qvec PROBLEMS1",qvec,"\n"); 
-		      MultLogLik <- -const}
-if (qvec[i]>1)  {cat("PROBLEMS2"); MultLogLik <- -const}
-	      	   if (qvec[i]>0&&qvec[i]<1) {
-		      #cat(i,qvec[i],"\n")
-		      MultLogLik <- MultLogLik + nvec[i]*log(qvec[i])}
-              }
-	   }
-	   list(MultLogLik=MultLogLik)
+function(x, nvec, paramch=1) {
+
+    k <- length(x)
+    p <- invbaselogit(x[-k])$probs
+
+    if (paramch==1) {
+        f <- (exp(x[k])-1)/(exp(x[k])+1)
+    }
+    if (paramch==2) {
+        minp <- min(p)
+        minf <- -minp/(1-minp)
+        f <- (exp(x[k])+minf)/(exp(x[k])+1)
+    }
+
+    list("MultLogLik"=MultLogLikP(p, f, nvec))
+}
+
+MultLogLikP <-
+function(p, f, nvec) {
+
+    k <- length(p)
+    if (length(nvec) != k * (k+1)/2) {
+        stop("length mistmatch between p and nvec")
+    }
+    if (is.matrix(p)) {
+        if (nrow(p) == 1) p <- c(p)
+        else stop("p should be a vector")
+    }
+    minp <- min(p)
+    minf <- -minp/(1-minp)
+
+    if (is.na(minp) || is.na(f) || f < minf) {
+        MultLogLik <- -Inf
+    }
+    else {
+
+        Q <- (1-f) * p %*% t(p) + f * diag(p)
+        R <- rep(1:k, times=k)
+        C <- rep(1:k, each=k)
+        Q[R > C] <- 2 * Q[R > C]
+        qvec <- Q[R >= C]
+
+        if (any(qvec <= 0 | qvec > 1)) {
+            MultLogLik <- -Inf
+        }
+        else {
+            MultLogLik <- sum(nvec * log(qvec))
+        }
+    }
+
+    return(MultLogLik)
 }
 

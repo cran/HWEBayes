@@ -18,8 +18,8 @@ baselogit(probs)
 \value{
 \item{baselogit}{Returns the set of \eqn{k-1} baseline logits, where \eqn{k} is the number of alleles.}
 }
-\references{Wakefield, J. (2009). Bayesian methods for examining Hardy-Weinberg equilibrium. Biometrics.
-}
+\references{Wakefield, J. (2010). Bayesian methods for examining Hardy-Weinberg
+equilibrium. Biometrics; Vol 66:257-65}
 \author{Jon Wakefield (jonno@u.washington).
 }
 \seealso{\code{invbaselogit}
